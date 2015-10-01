@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <logicalFolder name="stopWatch" displayName="stopWatch" projectFiles="true">
+        <itemPath>../CUDA/HW06/src/stopWatch/stopWatch.cpp</itemPath>
+        <itemPath>../CUDA/HW06/src/stopWatch/stopWatch.h</itemPath>
+      </logicalFolder>
+      <itemPath>../CUDA/HW06/src/init.cpp</itemPath>
+      <itemPath>../CUDA/HW06/src/main.cpp</itemPath>
+      <itemPath>../CUDA/HW06/src/main.cu</itemPath>
+      <itemPath>../CUDA/HW06/src/print.cpp</itemPath>
+      <itemPath>../CUDA/HW06/src/utils.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>../CUDA/HW06/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../CUDA/HW06/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>nvcc</commandlineTool>
+        </cTool>
+        <ccTool>
+          <commandlineTool>nvcc</commandlineTool>
+          <incDir>
+            <pElem>/Library/Frameworks/CUDA.framework</pElem>
+            <pElem>/Library/Frameworks/CUDA.framework/Headers</pElem>
+            <pElem>/Library/Frameworks/CUDA.framework/Libraries</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/Library/Frameworks/CUDA.framework</pElem>
+            <pElem>/Library/Frameworks/CUDA.framework/Headers</pElem>
+            <pElem>/Library/Frameworks/CUDA.framework/Versions/A/Libraries</pElem>
+          </linkerAddLib>
+          <commandlineTool>nvcc</commandlineTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
